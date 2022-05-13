@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta lang ="pt-br"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA</title>
+    <link rel="stylesheet" type="text/css" href="back.css" media="screen" /> 
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+</head>
+<body>
+    <h1>lista de afazeres</h1>
+    <hr>
+    <div>
+    descrição:<input type="text" id="tex">
+    <input type="button" value="inserir" onclick="mostratarefas()" id="btn">
+    <select  id="op">
+        <option id="filter">filtrar</option>
+        <option id="conc">concluidas</option>
+        <option id="pend">pendentes</option>
+    </select>
+    </div>
+    <hr>
+    <p>
+    <div1>
+    <ul id="lis" >
+        
+    </ul>
+    
+    </p>
+    </div1>
+    <script src="back.js"></script>
+    <script>
+          Parse.initialize("f0NI4KMivyW7SCJ1FLv2ZuPkHzv1iYRv0fmjru28", "fTsenOesVRwdO56gtx9VAE3gLBLQdeBAHXx3ZWTu");
+          Parse.serverURL = "https://parseapi.back4app.com/";
+    </script>
+  
+</body>
+</html>
